@@ -3,7 +3,7 @@ const Engineer = require("../lib/engineer");
 describe("Engineer", () => {
   describe("getGithub", () => {
     it("should return the github account of the Engineer", () => {
-      const inputGit = "guthib";
+      const inputGit = "github";
 
       const engineerGit = new Engineer({ github: "guthib" }).getGithub();
 
@@ -34,10 +34,10 @@ describe("Engineer", () => {
     </div>\n`;
 
       const engineerCard = new Engineer({
-        name: "Tim",
-        id: "42",
-        email: "email@address.com",
-        github: "guthub",
+        name: "Panje",
+        id: "25",
+        email: "panje@gmail.com",
+        github: "github",
       }).getCard();
 
       expect(engineerCard).toEqual(card);

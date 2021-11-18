@@ -2,16 +2,16 @@ const Employee = require("../lib/employee");
 
 describe("Employee", () => {
   describe("getName", () => {
-    it("should return the name of the employee", () => {
-      const inputName = "Bob";
+    it("Must return name of employee", () => {
+      const inputName = "Panje";
 
-      const employeeName = new Employee({ name: "Bob" }).getName();
+      const employeeName = new Employee({ name: "Panje" }).getName();
 
       expect(employeeName).toEqual(inputName);
     });
   });
   describe("getId", () => {
-    it("should return the id of the given employee", () => {
+    it("Must return the id of employee", () => {
       const inputId = 2;
 
       const id = new Employee({ id: 2 }).getId();
@@ -20,7 +20,7 @@ describe("Employee", () => {
     });
   });
   describe("getEmail", () => {
-    it("should return the email of the given employee", () => {
+    it("should return email of employee", () => {
       const inputEmail = "example@email.com";
 
       const email = new Employee({ email: "example@email.com" }).getEmail();

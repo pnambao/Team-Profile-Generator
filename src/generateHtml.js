@@ -1,6 +1,4 @@
-//generateHtml takes in the employees array generated 
-//from the prompts answered by the user and returns
-//html in a template literal
+
 const generateHtml = (employees) => {
   let htmlFile = `<!DOCTYPE html>
 <html lang="en">
